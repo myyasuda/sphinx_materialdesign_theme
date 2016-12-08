@@ -107,7 +107,7 @@ sphinx-build -b html ./example ./_build -c ./example
 
 ## License
 
-|thirdpaty              |version  |license         |URL                                                                |
+|thirdparty              |version  |license         |URL                                                                |
 |-----------------------|---------|----------------|-------------------------------------------------------------------|
 | Material Design Lite  |1.2.1    | Apache 2.0     |https://github.com/google/material-design-lite/blob/mdl-1.x/LICENSE|
 | Material design icons |3.0.1    | Apache 2.0     |https://github.com/google/material-design-icons/blob/master/LICENSE|
