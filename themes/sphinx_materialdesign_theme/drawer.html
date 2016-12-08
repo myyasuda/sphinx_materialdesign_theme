@@ -1,0 +1,26 @@
+<header class="mdl-layout__drawer">
+    {% if theme_show_drawer_title|tobool %}
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="brand" href="{{ pathto(master_doc) }}">
+              {%- if logo %}
+              <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="{{ project }}"/>
+              {%- else %}
+                  {{ project }}
+              {%- endif %}
+          </a>
+      </span>
+    {% endif %}
+{% block menu %}
+    <span class="mdl-layout-title toc">{{ _('Table Of Contents') }}</span>
+    {% set toctree = toctree(maxdepth=4, collapse=False, includehidden=False, titles_only=False) %}
+    {% if toctree %}
+        <nav class="mdl-navigation">
+        {{ toctree }}
+        </nav>
+    {% else %}
+    <!-- Local TOC -->
+    <nav class="mdl-navigation">{{ toc }}</nav>
+    {% endif %}
+{% endblock %}
+</header>

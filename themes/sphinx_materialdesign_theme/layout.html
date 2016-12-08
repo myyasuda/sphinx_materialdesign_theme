@@ -1,0 +1,63 @@
+{% extends "basic/layout.html" %}
+
+{% block htmltitle %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    {{ super() }}
+{% endblock %}
+
+{% set css_files = css_files + [
+    '_static/notosanscjkjp.css',
+    '_static/roboto.css',
+    '_static/material-icons.css',
+    '_static/material-design-lite-1.2.1/material.' + theme_primary_color|e + '-' + theme_accent_color|e + '.min.css',
+    '_static/sphinx_materialdesign_theme.css'
+] %}
+
+{% set script_files = script_files + [
+    '_static/material-design-lite-1.2.1/material.min.js',
+    '_static/sphinx_materialdesign_theme.js'
+  ]
+%}
+
+{%- block header %}{%- endblock %}
+{%- block relbar1 %}{% endblock %}
+{%- block relbar2 %}{% endblock %}
+{%- block sidebar1 %}{% endblock %}
+{%- block sidebar2 %}{% endblock %}
+{%- block footer %}{%- endblock %}
+
+
+{%- block content %}
+
+<div class="mdl-layout mdl-js-layout {% if theme_fixed_header|tobool %}mdl-layout--fixed-header{% endif %} {% if theme_fixed_drawer|tobool %}mdl-layout--fixed-drawer{% endif %}">
+    {% include "header.html" %}
+    {% include "drawer.html" %}
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            {% block body %} {% endblock %}
+            <div class="pagenation">
+            {%- if prev %}
+               <a id="button-prev" href="{{ prev.link|e }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" role="botton" {{ accesskey("P") }}>
+                   <i class="material-icons">keyboard_arrow_left</i> Prev
+               </a>
+            <div class="mdl-tooltip" data-mdl-for="button-prev">
+            {{ prev.title|striptags }}
+            </div>
+            {%- endif %}
+            {%- if next %}
+               <a id="button-next" href="{{ next.link|e }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" role="botton" {{ accesskey("N") }}>
+                    Next <i class="material-icons">keyboard_arrow_right</i>
+               </a>
+            <div class="mdl-tooltip" data-mdl-for="button-next">
+            {{ next.title|striptags }}
+            </div>
+            {%- endif %}
+            </div>
+        </div>
+        {% if theme_show_footer|tobool %}{% include "footer.html" %}{% endif %}
+    </main>
+</div>
+{%- endblock %}

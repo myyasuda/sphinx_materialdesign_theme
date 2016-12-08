@@ -1,0 +1,6 @@
+.idea/
+*.egg-info/
+dist/
+_build/
+build/
+example/_build/
