@@ -1,17 +1,29 @@
-  <header class="mdl-layout__header {% if theme_header_waterfall|tobool %}mdl-layout__header--waterfall{% endif %} {% if theme_header_scroll|tobool %}mdl-layout__header--scroll{% endif %}">
+<header class="mdl-layout__header {% if theme_header_waterfall|tobool %}mdl-layout__header--waterfall{% endif %} {% if theme_header_scroll|tobool %}mdl-layout__header--scroll{% endif %}">
     <div class="mdl-layout__header-row">
         {% if theme_show_header_title|tobool %}
-      <!-- Title -->
-      <span class="mdl-layout-title">
-          <a class="brand" href="{{ pathto(master_doc) }}">
-              {%- if logo %}
-              <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="{{ project }}"/>
-              {%- else %}
-                  {{ project }}
-              {%- endif %}
-          </a>
-      </span>
+        <!-- Title -->
+        <span class="mdl-layout-title">
+            <a class="brand" href="{{ pathto(master_doc) }}">
+                {%- if logo %}
+                <img class="logo" src="{{ pathto('_static/' + logo, 1) }}" alt="{{ project }}"/>
+                {%- else %}
+                {{ project }}
+                {%- endif %}
+            </a>
+        </span>
         {% endif %}
+        <nav class="mdl-navigation breadcrumb">
+            <a  class="mdl-navigation__link" href="{{ pathto(master_doc) }}">Top</a>
+            {%- for parent in parents %}
+            <i class="material-icons">navigate_next</i><a class="mdl-navigation__link"href="{{ parent.link|e }}">{{ parent.title }}</a>
+            {%- endfor %}
+            <i class="material-icons">navigate_next</i><a class="mdl-navigation__link is-active">{{ title }}</a>
+        </nav>
+        <div class="mdl-layout-spacer"></div>
+        {% include "header_search.html" %}
+    </div>
+    <div class="mdl-layout__header-row header-links">
+      <div class="mdl-layout-spacer"></div>
       <nav class="mdl-navigation">
       {%- for title, href, isExternal, icon in theme_header_links %}
           {% if isExternal %}
@@ -26,22 +38,5 @@
               </a>
           {%- endif -%}
       {%- endfor %}
-      </nav>
-      <div class="mdl-layout-spacer"></div>
-      {% include "header_search.html" %}
     </div>
-    <div class="mdl-layout__header-row breadcrumb">
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-          <a  class="mdl-navigation__link" href="{{ pathto(master_doc) }}">Top</a>
-        {%- for parent in parents %}
-            / <a class="mdl-navigation__link"href="{{ parent.link|e }}"
-                   {% if loop.last %}
-                     {{ accesskey("U") }}
-                     class="active"
-                   {% endif %}>{{ parent.title }}</a>
-        {%- endfor %}
-        / <a class="mdl-navigation__link is-active mdl-color-text--primary">{{ title }}</a>
-      </nav>
-    </div>
-  </header>
+</header>

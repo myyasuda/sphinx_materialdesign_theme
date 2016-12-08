@@ -1,6 +1,7 @@
 $(function() {
     $('body').fadeIn(0);
     $('.page-content > blockquote:first-child').remove();
+    styleMdlHeading();
     styleMdlDrower();
     styleMdlTable();
     styleMdlDownloadLink();
@@ -10,6 +11,10 @@ $(function() {
 
     $('input[type="submit"]').addClass('mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent');
 });
+
+function styleMdlHeading() {
+    $('h1, h2, h3, h4, h5, h6').addClass('mdl-color-text--primary');
+}
 
 /**
  * tableタグにmdlクラスを追加します。

@@ -10,7 +10,8 @@ body {
     font-family: {{ theme_font_family }};
 }
 
-h1, h2, h3, h4, h5, h6, blockquote, span.mdl-layout-title {
+h1, h2, h3, h4, h5, h6, blockquote, span.mdl-layout-title,
+a.download > code.download {
     font-family: {{ theme_font_family }};
 }
 
@@ -26,13 +27,8 @@ h1, h2, h3, h4, h5, h6, blockquote, span.mdl-layout-title {
 .page-content {
     padding: 30px;
     max-width: 1100px;
-    {% if theme_fixed_drawer|tobool %}
-    margin-left: 8px;
-    margin-right: 8px;
-    {%- else -%}
     margin-left: auto;
     margin-right: auto;
-    {% endif %}
 }
 
 /*
@@ -178,16 +174,13 @@ div.mdl-layout__header-row a.mdl-navigation__link > i.material-icons.navigation-
     top: -2px;
 }
 
-div.mdl-layout__header-row.breadcrumb {
-    background: rgba(255,255,255,0.6);
-}
-
-.breadcrumb a.mdl-navigation__link {
+nav.breadcrumb > a.mdl-navigation__link {
     padding: 0 8px;
+    font-size: 18px;
 }
 
-.breadcrumb a.mdl-navigation__link.is-active {
-    font-weight: bold;
+div.mdl-layout__header-row.header-links {
+    background: rgba(255,255,255,0.4);
 }
 
 /*
@@ -199,7 +192,8 @@ header.mdl-layout__drawer {
 
 header.mdl-layout__drawer > span.mdl-layout-title {
     font-weight: bold;
-    padding-left: 8px;
+    text-align: right;
+    padding: 0 10px;
     margin: 16px 0 8px 0;
     line-height: 32px;
 }
