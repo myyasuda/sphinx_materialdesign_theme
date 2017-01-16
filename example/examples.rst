@@ -2,7 +2,10 @@
 Examples
 ========
 
-.. _TOP:
+.. contents:: Table of Contents
+   :local:
+   :depth: 1
+   :backlinks: none
 
 Typpography
 ===========

@@ -288,3 +288,41 @@ ul.search span.highlighted {
 ul.search > li {
     margin-bottom: 24px;
 }
+
+/*
+ *  Contents Directive Styles
+ */
+.contents.topic {
+    border-left: 5px solid;
+    padding-left: 14px;
+}
+
+.contents.topic > p.topic-title {
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+}
+
+.contents.topic > ul{
+    padding: 0;
+    list-style: none;
+}
+
+.contents.topic  a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*
+ *  Figure Directive Styles
+ */
+img {
+   margin: 14px 0px;
+}
+
+/*
+ *  Table Styles
+ */
+table {
+   margin: 14px 0px;
+}
+

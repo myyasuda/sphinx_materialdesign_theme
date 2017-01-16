@@ -2,6 +2,11 @@
 表示例
 =======
 
+.. contents:: Table of Contents
+   :local:
+   :depth: 1
+   :backlinks: none
+
 タイポグラフィ
 ==============
 
