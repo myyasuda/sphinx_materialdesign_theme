@@ -1,4 +1,4 @@
-# Material Design HTML Theme fo Sphinx
+# Material Design HTML Theme for Sphinx
 
 [![Build Status](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme.svg?branch=master)](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme)
 
