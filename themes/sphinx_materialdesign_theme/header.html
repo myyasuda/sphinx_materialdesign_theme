@@ -13,11 +13,11 @@
         </span>
         {% endif %}
         <nav class="mdl-navigation breadcrumb">
-            <a  class="mdl-navigation__link" href="{{ pathto(master_doc) }}">Top</a>
+            <!-- <a  class="mdl-navigation__link" href="{{ pathto(master_doc) }}">Top</a> -->
             {%- for parent in parents %}
-            <i class="material-icons">navigate_next</i><a class="mdl-navigation__link"href="{{ parent.link|e }}">{{ parent.title }}</a>
+            <a class="mdl-navigation__link"href="{{ parent.link|e }}">{{ parent.title }}</a><i class="material-icons">navigate_next</i>
             {%- endfor %}
-            <i class="material-icons">navigate_next</i><a class="mdl-navigation__link is-active">{{ title }}</a>
+            <a class="mdl-navigation__link is-active">{{ title }}</a>
         </nav>
         <div class="mdl-layout-spacer"></div>
         {% include "header_search.html" %}
