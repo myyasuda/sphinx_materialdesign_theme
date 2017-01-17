@@ -8,8 +8,8 @@ Sphinx Material Design Theme
 Contents
 ========
 
-.. toctree:: Contents
-   :maxdepth: 3
+.. toctree::
+   :maxdepth: 1
 
    setup
    examples

@@ -20,8 +20,8 @@ function styleMdlHeading() {
  * contentsディレクティブにスタイルを追加します。
  */
 function styleMdlContents() {
-    $('.contents').addClass('mdl-color-text--primary')
-    $('.contents a').addClass('mdl-color-text--primary');
+    $('.contents, .toctree-wrapper').addClass('mdl-color-text--primary')
+    $('.contents a, .toctree-wrapper a').addClass('mdl-color-text--primary');
 }
 
 /**
