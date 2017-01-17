@@ -294,22 +294,26 @@ ul.search > li {
  */
 .contents.topic {
     border-left: 5px solid;
-    padding-left: 14px;
 }
 
 .contents.topic > p.topic-title {
     color: rgb(117, 117, 117);
     font-size: 14px;
+    padding-left: 14px;
 }
 
-.contents.topic > ul{
-    padding: 0;
+.contents.topic ul{
+    padding-left: 14px;
     list-style: none;
 }
 
-.contents.topic  a {
-    font-size: 20px;
+.contents.topic a {
+    font-size: 18px;
     text-decoration: none;
+}
+
+.contents.topic > ul > li > a {
+    font-size: 20px;
 }
 
 /*
