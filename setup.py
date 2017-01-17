@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name = 'sphinx_materialdesign_theme',
-    version = '0.0.3',
+    version = '0.0.4',
     author = 'Masahiko Yasuda',
     author_email= 'myasuda@uchida.co.jp',
     url="https://github.com/myyasuda/sphinx_materialdesign_theme",
