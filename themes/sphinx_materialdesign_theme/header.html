@@ -13,7 +13,6 @@
         </span>
         {% endif %}
         <nav class="mdl-navigation breadcrumb">
-            <!-- <a  class="mdl-navigation__link" href="{{ pathto(master_doc) }}">Top</a> -->
             {%- for parent in parents %}
             <a class="mdl-navigation__link"href="{{ parent.link|e }}">{{ parent.title }}</a><i class="material-icons">navigate_next</i>
             {%- endfor %}
