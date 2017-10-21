@@ -213,6 +213,9 @@ header.mdl-layout__drawer > nav.mdl-navigation {
 
 header.mdl-layout__drawer > nav.mdl-navigation ul a.mdl-navigation__link {
     padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header.mdl-layout__drawer > nav.mdl-navigation ul a.current {
