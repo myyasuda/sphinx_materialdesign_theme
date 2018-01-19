@@ -10,7 +10,7 @@ install:
     - pip install -U travis-sphinx
 
 script:
-    - travis-sphinx --source=example build
+    - travis-sphinx build --source=example
 
 after_success:
     - travis-sphinx deploy
