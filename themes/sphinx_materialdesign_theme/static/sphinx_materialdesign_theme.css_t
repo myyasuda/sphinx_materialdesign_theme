@@ -316,6 +316,7 @@ ul.search > li {
 .contents.topic ul{
     padding-left: 14px;
     list-style: none;
+    line-height: 30px;
 }
 
 .toctree-wrapper a,
