@@ -12,6 +12,8 @@ author = 'Masahiko Yasuda'
 
 language = 'en'
 
+extensions = ['sphinxcontrib.blockdiag']
+
 html_theme = 'sphinx_materialdesign_theme'
 
 html_theme_path = ['../themes']
@@ -68,3 +70,8 @@ html_theme_options = {
 rst_prolog= u"""
     .. |project| replace:: Sphinx Material Design Theme
 """
+
+def setup(app):
+    app.add_object_type('confval', 'confval',
+                        objname='configuration value',
+                        indextemplate='pair: %s; 設定値')

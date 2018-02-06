@@ -28,7 +28,7 @@ function styleMdlContents() {
  * tableタグにmdlクラスを追加します。
  */
 function styleMdlTable() {
-    $('table')
+    $('table:not(.footnote)')
         .addClass('mdl-data-table mdl-js-data-table mdl-shadow--2dp')
         .removeAttr('border')
         .find('th, td').addClass('mdl-data-table__cell--non-numeric');
