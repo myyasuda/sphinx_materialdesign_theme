@@ -13,6 +13,5 @@ Contents
 
    setup
    examples
-   blockdiag.rst
    dev/index
    japanese/index
