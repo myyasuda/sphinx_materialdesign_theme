@@ -184,7 +184,7 @@ div.mdl-layout__header-row.header-links {
 }
 
 /*
- * Drower Styles
+ * Drawer Styles
  */
 header.mdl-layout__drawer {
     background-color: #fff;
@@ -200,6 +200,10 @@ header.mdl-layout__drawer > span.mdl-layout-title {
 
 header.mdl-layout__drawer > span.mdl-layout-title > a.brand {
     font-weight: bold;
+}
+
+header.mdl-layout__drawer > span.mdl-layout-title > a.brand > img.logo {
+    max-width: 200px;
 }
 
 header.mdl-layout__drawer > span.mdl-layout-title.toc {
