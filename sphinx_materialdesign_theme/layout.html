@@ -34,7 +34,7 @@
 <div class="mdl-layout mdl-js-layout {% if theme_fixed_header|tobool %}mdl-layout--fixed-header{% endif %} {% if theme_fixed_drawer|tobool %}mdl-layout--fixed-drawer{% endif %}">
     {% include "header.html" %}
     {% include "drawer.html" %}
-    <main class="mdl-layout__content">
+    <main class="mdl-layout__content" tabIndex="0">
         <div class="page-content">
             {% block body %} {% endblock %}
             <div class="pagenation">

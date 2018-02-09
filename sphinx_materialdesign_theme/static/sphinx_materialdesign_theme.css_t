@@ -10,6 +10,10 @@ body {
     font-family: {{ theme_font_family }};
 }
 
+.mdl-layout__content:focus {
+  outline: none;
+}
+
 h1, h2, h3, h4, h5, h6, blockquote, span.mdl-layout-title,
 a.download > code.download {
     font-family: {{ theme_font_family }};
