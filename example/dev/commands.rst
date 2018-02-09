@@ -16,7 +16,7 @@ install
 
 .. code-block:: bat
 
-   pip install dist/sphinx_materialdesign_theme-${version}.zip
+   pip install dist/sphinx_materialdesign_theme-${version}.tar.gz
 
 Register PyPI
 -------------

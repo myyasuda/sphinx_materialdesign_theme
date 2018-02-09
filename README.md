@@ -19,9 +19,7 @@ pip install -U sphinx_materialdesign_theme
 
 ```python
 import sphinx_materialdesign_theme
-
 html_theme = 'sphinx_materialdesign_theme'
-html_theme_path = [sphinx_materialdesign_theme.get_path()]
 ```
 
 ## Html theme options
@@ -90,7 +88,7 @@ python setup.py sdist
 ### install
 
 ```
-pip install dist/sphinx_materialdesign_theme-${version}.zip
+pip install dist/sphinx_materialdesign_theme-${version}.tar.gz
 ```
 
 ### Resister PyPI

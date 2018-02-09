@@ -11,7 +11,7 @@ $(function() {
     styleMdlContents();
 
     $('input[type="submit"]').addClass('mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent');
-    $('.mdl-layout').focus();
+    $('div.page-content').trigger('click');
 });
 
 function styleMdlHeading() {

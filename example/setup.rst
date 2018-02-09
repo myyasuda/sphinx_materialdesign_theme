@@ -23,7 +23,6 @@ Setting conf.py
    import sphinx_materialdesign_theme
 
    html_theme = 'sphinx_materialdesign_theme'
-   html_theme_path = [sphinx_materialdesign_theme.get_path()]
 
    # Html logo in navbar.
    # Fit in the navbar at the height of image is 37 px.

@@ -13,8 +13,7 @@ author = 'Masahiko Yasuda'
 language = 'en'
 
 html_theme = 'sphinx_materialdesign_theme'
-
-html_theme_path = ['../themes']
+html_theme_path = ['../sphinx_materialdesign_theme']
 
 html_theme_options = {
     # Specify a list of menu in Header.
