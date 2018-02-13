@@ -1,7 +1,7 @@
 {%- if pagename != "search" %}
 <form class="form-inline pull-sm-right" action="{{ pathto('search') }}" method="get">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
-        <label class="mdl-button mdl-js-button mdl-button--icon"  for="waterfall-exp">
+        <label id="quick-search-icon" class="mdl-button mdl-js-button mdl-button--icon"  for="waterfall-exp">
             <i class="material-icons">search</i>
         </label>
         <div class="mdl-textfield__expandable-holder">
@@ -9,6 +9,9 @@
           <input type="hidden" name="check_keywords" value="yes" />
           <input type="hidden" name="area" value="default" />
         </div>
+      </div>
+      <div class="mdl-tooltip" data-mdl-for="quick-search-icon">
+      {{ _('Quick search') }}
       </div>
 </form>
 {%- endif %}

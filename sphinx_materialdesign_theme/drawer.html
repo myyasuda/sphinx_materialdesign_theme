@@ -11,16 +11,16 @@
           </a>
       </span>
     {% endif %}
-{% block menu %}
-    <span class="mdl-layout-title toc">{{ _('Table Of Contents') }}</span>
-    {% set toctree = toctree(maxdepth=4, collapse=False, includehidden=False, titles_only=False) %}
-    {% if toctree %}
-        <nav class="mdl-navigation">
-        {{ toctree }}
-        </nav>
-    {% else %}
-    <!-- Local TOC -->
-    <nav class="mdl-navigation">{{ toc }}</nav>
-    {% endif %}
-{% endblock %}
+    {% block menu %}
+        <span class="mdl-layout-title toc">{{ _('Table Of Contents') }}</span>
+        {% set toctree = toctree(maxdepth=4, collapse=False, includehidden=False, titles_only=False) %}
+        {% if toctree %}
+            <nav class="mdl-navigation">
+            {{ toctree }}
+            </nav>
+        {% else %}
+        <!-- Local TOC -->
+        <nav class="mdl-navigation">{{ toc }}</nav>
+        {% endif %}
+    {% endblock %}
 </header>
