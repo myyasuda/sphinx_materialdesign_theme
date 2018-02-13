@@ -7,8 +7,6 @@ Examples
    :depth: 1
    :backlinks: none
 
-.. index:: Typpography
-
 Typpography
 ===========
 
@@ -232,8 +230,8 @@ Admonitions
 
     This is a **danger** directive!
 
-Footnote
-========
+Footnotes
+=========
 
 .. code-block:: rst
 
@@ -251,3 +249,28 @@ Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
 
 .. [#f1] Text of the first footnote.
 .. [#f2] Text of the second footnote.
+
+
+Indexes
+=======
+
+
+.. index:: Language
+
+.. index::
+    pair: Language; Python
+
+.. index::
+    triple: Language; Python; Sphinx
+
+.. code-block:: rst
+
+    .. index:: Language
+
+    .. index::
+        pair: Language; Python
+
+    .. index::
+        triple: Language; Python; Sphinx
+
+* :ref:`genindex`
