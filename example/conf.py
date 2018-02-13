@@ -64,6 +64,8 @@ html_theme_options = {
     'show_footer': True
 }
 
+html_show_sourcelink = True
+
 rst_prolog= u"""
     .. |project| replace:: Sphinx Material Design Theme
 """
