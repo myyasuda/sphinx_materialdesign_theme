@@ -7,6 +7,8 @@ Examples
    :depth: 1
    :backlinks: none
 
+.. index:: Typpography
+
 Typpography
 ===========
 
