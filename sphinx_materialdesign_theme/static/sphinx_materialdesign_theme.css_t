@@ -350,5 +350,12 @@ img {
  */
 table {
    margin: 14px 0px;
+   table-layout: fixed;
+   max-width: 100%;
+}
+
+table td {
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
