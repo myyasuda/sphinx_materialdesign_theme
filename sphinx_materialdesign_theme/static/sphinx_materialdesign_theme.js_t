@@ -40,6 +40,7 @@ function styleMdlDownloadLink() {
 }
 
 function styleMdlAdmonition() {
+    $('div.admonition').addClass('mdl-shadow--2dp');
     $('div.admonition.hint > p.admonition-title')
         .prepend('<i class="material-icons">help_outline</i>');
     $('div.admonition.note > p.admonition-title')
@@ -78,7 +79,7 @@ function styleMdlDrower() {
 }
 
 function styleMdlFooter() {
-    $('footer.mdl-mini-footer > div.mdl-mini-footer__left-section > ul')
+    $('footer.mdl-mini-footer > div.mdl-mini-footer__left-section ul')
         .addClass('mdl-mini-footer__link-list');
 }
 

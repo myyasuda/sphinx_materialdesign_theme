@@ -1,8 +1,10 @@
 <footer class="mdl-mini-footer">
     <div class="mdl-mini-footer__left-section">
       <div class="mdl-logo">{{ project }}</div>
+      <div>
         {% set toctree = toctree(maxdepth=1, collapse=False, includehidden=False, titles_only=False) %}
         {{ toctree }}
+      </div>
     </div>
 
     <div class="mdl-mini-footer__right-section">

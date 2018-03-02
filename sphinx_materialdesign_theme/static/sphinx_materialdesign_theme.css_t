@@ -270,6 +270,11 @@ footer.mdl-mini-footer > div.mdl-mini-footer__left-section {
     margin-bottom: 20px;
 }
 
+div.mdl-mini-footer__left-section {
+    display: flex;
+    flex-direction: column;
+}
+
 /*
  * Download Link Styles
  */
