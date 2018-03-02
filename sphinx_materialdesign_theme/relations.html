@@ -1,0 +1,18 @@
+<div class="pagenation">
+  {%- if prev %}
+     <a id="button-prev" href="{{ prev.link|e }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" role="botton" {{ accesskey("P") }}>
+         <i class="material-icons">arrow_back</i>Previous
+     </a>
+  <div class="mdl-tooltip" data-mdl-for="button-prev">
+  {{ prev.title|striptags }}
+  </div>
+  {%- endif %}
+  {%- if next %}
+     <a id="button-next" href="{{ next.link|e }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" role="botton" {{ accesskey("N") }}>
+          Next <i class="material-icons">arrow_forward</i>
+     </a>
+  <div class="mdl-tooltip" data-mdl-for="button-next">
+  {{ next.title|striptags }}
+  </div>
+  {%- endif %}
+  </div>

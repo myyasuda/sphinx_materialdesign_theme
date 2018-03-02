@@ -21,42 +21,27 @@
   ]
 %}
 
-{%- block header %}{%- endblock %}
+{%- block header %}{% endblock %}
 {%- block relbar1 %}{% endblock %}
-{%- block relbar2 %}{% endblock %}
-{%- block sidebar1 %}{% endblock %}
+{%- block relbar2 %}{% include "relations.html" %}{% endblock %}
 {%- block sidebar2 %}{% endblock %}
-{%- block footer %}{%- endblock %}
 
+{%- block body_tag %}
+<body>
+    <div class="mdl-layout mdl-js-layout {% if theme_fixed_header|tobool %}mdl-layout--fixed-header{% endif %} {% if theme_fixed_drawer|tobool %}mdl-layout--fixed-drawer{% endif %}">
+        {%- block md_header %}{% include "header.html" %}{% endblock %}
+        {%- block sidebar1 %}{% include "drawer.html" %}{% endblock %}
+        <main class="mdl-layout__content" tabIndex="0">
+{% endblock %}
 
-{%- block content %}
-
-<div class="mdl-layout mdl-js-layout {% if theme_fixed_header|tobool %}mdl-layout--fixed-header{% endif %} {% if theme_fixed_drawer|tobool %}mdl-layout--fixed-drawer{% endif %}">
-    {% include "header.html" %}
-    {% include "drawer.html" %}
-    <main class="mdl-layout__content" tabIndex="0">
+{%- block document %}
         <div class="page-content">
-            {% block body %} {% endblock %}
-            <div class="pagenation">
-            {%- if prev %}
-               <a id="button-prev" href="{{ prev.link|e }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" role="botton" {{ accesskey("P") }}>
-                   <i class="material-icons">arrow_back</i>Previous
-               </a>
-            <div class="mdl-tooltip" data-mdl-for="button-prev">
-            {{ prev.title|striptags }}
-            </div>
-            {%- endif %}
-            {%- if next %}
-               <a id="button-next" href="{{ next.link|e }}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" role="botton" {{ accesskey("N") }}>
-                    Next <i class="material-icons">arrow_forward</i>
-               </a>
-            <div class="mdl-tooltip" data-mdl-for="button-next">
-            {{ next.title|striptags }}
-            </div>
-            {%- endif %}
-            </div>
+        {% block body %} {% endblock %}
         </div>
+{% endblock %}
+
+{%- block footer %}
         {% if theme_show_footer|tobool %}{% include "footer.html" %}{% endif %}
-    </main>
-</div>
+        </main>
+    </div>
 {%- endblock %}
