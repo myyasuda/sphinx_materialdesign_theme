@@ -4,7 +4,6 @@ Base styles
 
 body {
     display: none;
-    color: rgb(117, 117, 117);
     background-color: #fafafa;
     font-size: 100%;
     font-family: {{ theme_font_family }};
