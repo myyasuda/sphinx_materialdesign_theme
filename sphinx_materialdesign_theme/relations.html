@@ -7,9 +7,6 @@
             <div>{{ prev.title|striptags }}</div>
          </div>
      </a>
-  <div class="mdl-tooltip" data-mdl-for="button-prev">
-  {{ prev.title|striptags }}
-  </div>
   {%- endif %}
   {%- if next %}
      <a id="button-next" href="{{ next.link|e }}" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" {{ accesskey("N") }}>
@@ -19,8 +16,5 @@
             <div>{{ next.title|striptags }}</div>
         </div>
      </a>
-  <div class="mdl-tooltip" data-mdl-for="button-next">
-  {{ next.title|striptags }}
-  </div>
   {%- endif %}
   </div>

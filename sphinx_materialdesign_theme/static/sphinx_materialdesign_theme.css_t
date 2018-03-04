@@ -64,6 +64,28 @@ Material Icons
 }
 
 /*
+ * Heading Styles
+ */
+div.page-content h1 {
+    font-size: 34px;
+}
+div.page-content h2 {
+    font-size: 28px;
+    line-height: 38px;
+    padding-top: 48px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+div.page-content h3 {
+    font-size: 20px;
+    line-height: 30px;
+    pading-top: 32px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+/*
  * CodeBlock Styles
  */
 pre {
