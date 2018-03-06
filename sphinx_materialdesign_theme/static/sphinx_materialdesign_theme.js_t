@@ -51,7 +51,7 @@ function styleMdlAdmonition() {
         .prepend('<i class="material-icons">check_circle</i>');
     $('div.admonition.error > p.admonition-title,div.admonition.caution > p.admonition-title,div.admonition.danger > p.admonition-title')
         .prepend('<i class="material-icons">error_outline</i>');
-    $('div.admonition.warning > p.admonition-title').prepend('<i class="material-icons">warning</i>');
+    $('div.admonition.warning > p.admonition-title, div.admonition.attention > p.admonition-title').prepend('<i class="material-icons">warning</i>');
 }
 
 function styleMdlCodeBlock() {

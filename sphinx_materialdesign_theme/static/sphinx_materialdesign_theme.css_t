@@ -157,12 +157,14 @@ div.admonition.hint > p.admonition-title {
     color: rgb(0, 188, 212);
 }
 
-div.admonition.warning {
+div.admonition.warning,
+div.admonition.attention {
     border-left: 4px solid rgb(255, 193, 7);
     background-color: rgba(255,193,7,0.1);
 }
 
-div.admonition.warning > p.admonition-title {
+div.admonition.warning > p.admonition-title,
+div.admonition.attention > p.admonition-title {
     color: rgb(255, 193, 7);
 }
 

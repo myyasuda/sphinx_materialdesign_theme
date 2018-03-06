@@ -169,6 +169,18 @@ Admonitions
 
     This is a **warning** directive!
 
+**Attention**
+
+.. code-block:: rst
+
+    .. attention::
+
+        This is a attention directive!
+
+.. attention::
+
+    This is a **attention** directive!
+
 **Tip**
 
 .. code-block:: rst
