@@ -67,7 +67,7 @@ Material Icons
  * Heading Styles
  */
 div.page-content h1 {
-    font-size: 34px;
+    font-size: 36px;
 }
 div.page-content h2 {
     font-size: 28px;
@@ -78,9 +78,33 @@ div.page-content h2 {
 }
 
 div.page-content h3 {
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 32px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+div.page-content h4 {
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 32px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+div.page-content h5 {
     font-size: 20px;
     line-height: 30px;
-    pading-top: 32px;
+    padding-top: 32px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+div.page-content h6 {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 32px;
     margin-top: 0px;
     margin-bottom: 16px;
 }
@@ -88,6 +112,10 @@ div.page-content h3 {
 /*
  * CodeBlock Styles
  */
+div[class*="highlight-"] {
+    margin: 14px 0;
+}
+
 pre {
     background: rgba(0, 0, 0, 0.05);
     color: #455A64;
@@ -132,7 +160,7 @@ blockquote:before {
  */
 div.admonition {
     padding: 16px 32px;
-    margin-bottom: 14px;
+    margin: 24px 0;
 }
 
 div.admonition > p.admonition-title {
