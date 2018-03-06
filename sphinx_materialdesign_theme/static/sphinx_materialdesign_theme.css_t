@@ -236,6 +236,9 @@ nav.breadcrumb > a.mdl-navigation__link {
 
 div.mdl-layout__header-row.header-links {
     background: rgba(255,255,255,0.4);
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 /*
@@ -419,6 +422,16 @@ a.download {
  /*
   * Search Styles
   */
+#waterfall-exp::-webkit-input-placeholder {
+    color: #ccc;
+}
+#waterfall-exp:-ms-input-placeholder {
+    color: #ccc;
+}
+#waterfall-exp::-moz-placeholder {
+    color: #ccc;
+}
+
 ul.search span.highlighted {
     font-weight: bold;
 }

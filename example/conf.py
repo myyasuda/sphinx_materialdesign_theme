@@ -29,10 +29,10 @@ html_theme_options = {
     # For details see link.
     # https://material.io/icons/
     'header_links' : [
-        ('Home', 'index', False, 'home'),
-        ("ExternalLink", "http://example.com", True, 'launch'),
-        ("NoIconLink", "http://example.com", True, ''),
-        ("GitHub", "https://github.com/myyasuda/sphinx_materialdesign_theme", True, 'link')
+       ('Home', 'index', False, 'home'),
+       ("ExternalLink", "http://example.com", True, 'launch'),
+       ("NoIconLink", "http://example.com", True, ''),
+       ("GitHub", "https://github.com/myyasuda/sphinx_materialdesign_theme", True, 'link')
     ],
 
     # Customize css colors.

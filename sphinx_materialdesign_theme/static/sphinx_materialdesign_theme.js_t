@@ -10,6 +10,8 @@ $(function() {
     styleMdlCodeBlock();
     styleMdlContents();
 
+    quickSearchClickEvent();
+
     $('input[type="submit"]').addClass('mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent');
     $('.mdl-layout__content').focus();
 });
@@ -98,4 +100,18 @@ function copyClipboard(selector) {
     var result = document.execCommand('copy');
     document.body.removeChild(textarea);
     return result;
+}
+
+function quickSearchClickEvent() {
+    var $breadcrumb = $('.breadcrumb');
+
+    $('#waterfall-exp').focus(() => {
+        if ($(window).width() <= 1024) {
+            $breadcrumb.hide(); 
+        }
+    }).blur(() => {
+        if ($(window).width() <= 1024) {
+            $breadcrumb.show(); 
+        }
+    });
 }
