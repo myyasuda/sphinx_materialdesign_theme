@@ -10,7 +10,7 @@
     "build": "npm-run-all build:parcel build:example",
     "build:parcel": "parcel build src/js/sphinx_materialdesign_theme.js -d sphinx_materialdesign_theme/static",
     "build:example": "rimraf _build && sphinx-build -b html example _build",
-    "release": "npm-run-all build:parcel release:pypi",
+    "release": "npm-run-all build:parcel release:package release:pypi",
     "release:noupload": "npm-run-all build:parcel release:package",
     "release:pypi": "twine upload dist/*",
     "release:package": "python setup.py sdist"
