@@ -1,0 +1,39 @@
+{
+  "name": "sphinx_materialdesign_theme",
+  "version": "0.1.4",
+  "description": "[![Build Status](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme.svg?branch=master)](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme)",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "npm-run-all build:parcel build:example",
+    "build:parcel": "parcel build src/js/sphinx_materialdesign_theme.js -d sphinx_materialdesign_theme/static",
+    "build:example": "rimraf _build && sphinx-build -b html example _build",
+    "release": "npm-run-all build:parcel release:pypi",
+    "release:noupload": "npm-run-all build:parcel release:package",
+    "release:pypi": "twine upload dist/*",
+    "release:package": "python setup.py sdist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myyasuda/sphinx_materialdesign_theme.git"
+  },
+  "author": "myyasuda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/myyasuda/sphinx_materialdesign_theme/issues"
+  },
+  "homepage": "https://github.com/myyasuda/sphinx_materialdesign_theme#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "parcel-bundler": "^1.6.2",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "material-design-lite": "^1.3.0"
+  }
+}

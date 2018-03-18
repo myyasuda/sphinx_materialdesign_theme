@@ -1,0 +1,36 @@
+/*
+Variables
+*/
+$font_size: 18px;
+
+$background_color: #fafafa;
+$code_background: rgba(0,0,0,.05);
+
+$body_font_family: Roboto, 'Noto Sans Japanese' !default;
+$code_font_family: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace !default;
+
+$box_shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+
+$xl-breakpoint: 1795px;
+$lg-breakpoint: 1200px;
+$md-breakpoint: 992px;
+$sm-breakpoint: 768px;
+$xs-breakpoint: 576px;
+
+@import "./fonts/material-icons";
+@import "./root";
+@import "./layout/layout";
+@import "./headerings/headerings";
+@import "./admonitions/admonitions";
+@import "./code/code";
+@import "./blockquote/blockquote";
+@import "./tables/tables";
+@import "./toc/globaltoc";
+@import "./toc/localtoc";
+@import "./toc/toctree";
+@import "./lists/lists";
+@import "./drawer/drawer";
+@import "./header/header";
+@import "./footer/footer";
+@import "./search/search";
+

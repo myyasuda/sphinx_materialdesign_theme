@@ -1,0 +1,54 @@
+html {
+    font-size: $font_size;
+}
+
+body {
+    display: none;
+    background-color: $background_color;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: $body_font_family;
+}
+
+.mdl-layout__content:focus {
+    outline: none;
+ }
+
+h1, h2, h3, h4, h5, h6, blockquote, span.mdl-layout-title,
+a.download > code.download {
+    font-family: $body_font_family;
+}
+
+.page-content {
+    font-size: 1rem;
+    p, ul, ol, dl, dd, dt, table, th, td {
+        font-size: 1rem;
+    }
+}
+
+.brand {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/*
+ *  Figure Directive Styles
+ */
+ img {
+    margin: 14px 0px;
+ }
+ 
+
+
+/*
+ * Download Link Styles
+ */
+a.download > i.material-icons {
+    position: relative;
+    top: 5px;
+}
+
+a.download {
+    text-decoration: none;
+}

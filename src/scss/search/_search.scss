@@ -1,0 +1,20 @@
+ /*
+  * Search Styles
+  */
+#waterfall-exp::-webkit-input-placeholder {
+    color: #ccc;
+}
+#waterfall-exp:-ms-input-placeholder {
+    color: #ccc;
+}
+#waterfall-exp::-moz-placeholder {
+    color: #ccc;
+}
+
+ul.search span.highlighted {
+    font-weight: bold;
+}
+
+ul.search > li {
+    margin-bottom: 24px;
+}

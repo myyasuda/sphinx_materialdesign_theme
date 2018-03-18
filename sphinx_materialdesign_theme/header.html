@@ -14,7 +14,7 @@
         {% endif %}
         <nav class="mdl-navigation breadcrumb">
             {%- for parent in parents %}
-            <a class="mdl-navigation__link"href="{{ parent.link|e }}">{{ parent.title }}</a><i class="material-icons">navigate_next</i>
+            <a class="mdl-navigation__link" href="{{ parent.link|e }}">{{ parent.title }}</a><i class="material-icons">navigate_next</i>
             {%- endfor %}
             <a class="mdl-navigation__link is-active">{{ title }}</a>
         </nav>
@@ -40,5 +40,6 @@
               </a>
           {%- endif -%}
       {%- endfor %}
+      </nav>
     </div>
 </header>

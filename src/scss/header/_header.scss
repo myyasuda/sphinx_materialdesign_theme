@@ -1,0 +1,19 @@
+/*
+ * Header Styles
+ */
+ div.mdl-layout__header-row a.mdl-navigation__link > i.material-icons.navigation-link-icon {
+    position: relative;
+    top: -2px;
+}
+
+nav.breadcrumb > a.mdl-navigation__link {
+    padding: 0 8px;
+    font-size: 18px;
+}
+
+div.mdl-layout__header-row.header-links {
+    background: rgba(255,255,255,0.4);
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}

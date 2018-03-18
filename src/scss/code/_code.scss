@@ -1,0 +1,51 @@
+.page-content {
+    .highlight {
+        pre {
+            font-family: $code_font_family;
+            padding: 1rem;
+            margin: 1.5rem 0px;
+            overflow: auto;
+            overflow-y: hidden;
+        }
+    }
+    
+    .code, code:not(.download) {
+        margin: 0 4px;
+        padding: 0 4px;
+        background: $code_background;
+        font-family: $code_font_family;
+        border-radius: 2px;
+        span.pre {
+            font-family: $code_font_family;
+        }
+    }
+    
+    pre {
+        background: rgba(0, 0, 0, 0.05);
+        color: #455A64;
+        padding: 16px 32px;
+        width: auto;
+        border-radius: 4px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+
+        &:hover {
+            box-shadow: $box_shadow;
+
+            &:before {
+                font-family: $body_font_family;
+                padding: 0 0.5rem;
+                content: attr(click-to-copy);
+                color: rgba(0, 0, 0, 0.5);
+                border-radius: 4px;
+                position: relative;
+                float: right;
+                top: -0.5rem;
+                right: -0.5rem;
+                background: rgb(200, 200, 200);
+                font-size: 0.8rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

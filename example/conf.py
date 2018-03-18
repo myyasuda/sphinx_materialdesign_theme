@@ -6,11 +6,15 @@ master_doc = 'index'
 
 version = "0.0.1"
 
-project = 'Sphinx Material Design Theme'
+
+project = 'Material Design Theme'
 copyright = '2016, Masahiko Yasuda'
 author = 'Masahiko Yasuda'
 
 language = 'en'
+
+html_favicon = '_static/favicon.ico'
+html_logo = '_static/logo.png'
 
 html_theme = 'sphinx_materialdesign_theme'
 html_theme_path = ['../']

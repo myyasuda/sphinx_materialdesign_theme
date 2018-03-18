@@ -1,0 +1,58 @@
+.page-content {
+    .headerlink {
+        color: $background_color;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        .toc-backref {
+            text-decoration: none;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+        padding-top: 3.5rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        padding-top: 2rem;
+        margin-top: 0px;
+        margin-bottom: 1rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        padding-top: 2rem;
+        margin-top: 0px;
+        margin-bottom: 1rem;
+    }
+    
+    div.page-content h5 {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding-top: 2rem;
+        margin-top: 0px;
+        margin-bottom: 1rem;
+    }
+    
+    div.page-content h6 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-top: 2rem;
+        margin-top: 0px;
+        margin-bottom: 1rem;
+    }
+    
+
+}

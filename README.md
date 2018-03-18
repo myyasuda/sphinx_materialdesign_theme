@@ -6,25 +6,27 @@
 
 ## Requirements
 
-- python 3.5.2
-- Sphinx 1.6
+- python
+  - Sphinx
+- node
 
-## Installation
+## Quick Start
 
+Install the latest version of sphinx_material_design with `pip`.
+
+```shell
+pip install sphinx_material_design
 ```
-pip install -U sphinx_materialdesign_theme
-```
 
-## Setting conf.py
+Add the following line to `conf.py`.
 
 ```python
-import sphinx_materialdesign_theme
-html_theme = 'sphinx_materialdesign_theme'
+html_theme = 'sphinx_material_design'
 ```
 
 ## Html theme options
 
-The following is a description of the options that can be specified in **html_theme_options** in conf.py.
+The following is a description of the options that can be specified in `html_theme_options` in your project's `conf.py`.
 
 ```python
 html_theme_options = {

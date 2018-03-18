@@ -1,0 +1,84 @@
+@import "material-design-lite/src/layout/layout";
+
+.globaltoc {
+    .caption, .toc {
+        display: none;
+    }
+
+    ul {
+
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            min-height: 48px;
+        }
+        a {
+            @extend .mdl-navigation__link;
+
+            padding: 12px 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.75rem;
+
+            &.current {
+                font-weight: bold;
+            }
+
+            &.reference:hover {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    a.has-children {
+        & + ul {
+            height: 0;
+            overflow: hidden;
+            transition: all 300ms 0s ease;
+            &.is-open {
+                height: auto; /* 追加 */
+                max-height: 50em;
+            }
+        }
+    }
+    div.nav-toggle {
+        padding: 0;
+        float: right;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        > a {
+            padding: 0;
+            margin-left: 0;
+            margin-right: 4px;
+            cursor: pointer;
+        }
+        &.is-open {
+            transform: rotateZ(180deg);
+            > a {
+                margin-right: 0;
+                margin-left: 4px;
+            }
+        }
+    }
+
+    nav {
+        > ul > li > a {
+            padding-left: 8px;
+        }
+        > ul > li > ul > li > a {
+            padding-left: 16px;
+        }
+        > ul > li > ul > li > ul > li > a {
+            padding-left: 24px;
+        }
+        > ul > li > ul > li > ul > li > ul> li > a {
+            padding-left: 32px;
+        }
+    }
+}
