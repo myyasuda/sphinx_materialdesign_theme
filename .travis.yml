@@ -1,12 +1,12 @@
 language: python
 python:
-    - "3.6"
+    - "2.7"
 
 before_install:
     - python -m pip install --upgrade pip
 
 install:
-    - pip install -U Sphinx==1.7.0
+    - pip install -U Sphinx
     - pip install -U travis-sphinx
 
 script:
