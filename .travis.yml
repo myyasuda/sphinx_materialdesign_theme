@@ -1,4 +1,6 @@
-language: python - "2.7"
+language: python
+python:
+    - "3.6"
 
 before_install:
     - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
@@ -10,7 +12,7 @@ before_install:
     - sudo ln -s /run/shm /dev/shm
 
 install:
-    - conda install --yes python="2.7" sphinx
+    - conda install --yes python="3.6" sphinx
     - pip install --user travis-sphinx
 
 script:
