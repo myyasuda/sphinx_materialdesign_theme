@@ -8,17 +8,17 @@ Material Design Theme For Sphinx
 Quick Start
 ===========
 
-Install the latest version of sphinx_material_design with :code:`pip`.
+Install the latest version of sphinx_materialdesign_theme with :code:`pip`.
 
 .. code-block:: bat
 
-   pip install sphinx_material_design
+   pip install sphinx_materialdesign_theme
 
 Add the following line to :code:`conf.py`.
 
 .. code-block:: python
 
-   html_theme = 'sphinx_material_design'
+   html_theme = 'sphinx_materialdesign_theme'
 
 Contents
 =========

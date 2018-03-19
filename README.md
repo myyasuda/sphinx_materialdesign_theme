@@ -12,16 +12,16 @@
 
 ## Quick Start
 
-Install the latest version of sphinx_material_design with `pip`.
+Install the latest version of sphinx_materialdesign_theme with `pip`.
 
 ```shell
-pip install sphinx_material_design
+pip install sphinx_materialdesign_theme
 ```
 
 Add the following line to `conf.py`.
 
 ```python
-html_theme = 'sphinx_material_design'
+html_theme = 'sphinx_materialdesign_theme'
 ```
 
 ## Html theme options
