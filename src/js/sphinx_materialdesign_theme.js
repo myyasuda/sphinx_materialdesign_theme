@@ -41,7 +41,7 @@ function styleDrawer() {
             .parent()
             .before($('<div class="nav-toggle"><a class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">keyboard_arrow_down</i></a></div>').click(function() {
                 const $toggle = $(this);
-                $(`ul#globalnav-${index}`).toggleClass('is-open');
+                $(`ul#globalnav-${index}`).animate({ height: 'toggle', opacity: 'toggle'});
                 $toggle.toggleClass('is-open');
             }))
             .children('ul').attr('id', `globalnav-${index}`);

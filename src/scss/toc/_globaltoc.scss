@@ -36,15 +36,10 @@
 
     a.has-children {
         & + ul {
-            max-height: 0;
-            overflow-y: hidden;
-            transition: all 300ms ease 0s;
-            &.is-open {
-                max-height: 900vh;
-                opacity: 1;
-            }
+            display: none;
         }
     }
+
     div.nav-toggle {
         padding: 0;
         float: right;
