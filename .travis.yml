@@ -15,4 +15,4 @@ script:
     - sphinx-build -b html ./example ./_build -c ./example
 
 after_success:
-    - ./deploy.sh
+    - bash ./deploy.sh
