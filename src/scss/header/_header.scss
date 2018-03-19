@@ -6,9 +6,25 @@
     top: -2px;
 }
 
-nav.breadcrumb > a.mdl-navigation__link {
-    padding: 0 8px;
-    font-size: 18px;
+nav.breadcrumb {
+    > a.mdl-navigation__link {
+        padding: 0 8px;
+        font-size: 18px;
+    }
+    @media (max-width: $lg-breakpoint - 1) {
+        width: calc( 100% - 64px );
+        a.mdl-navigation__link.is-active {
+            overflow-x: hidden;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        a.mdl-navigation__link:not(.is-active),
+        i.material-icons {
+            display: none;
+        }
+    }
 }
 
 div.mdl-layout__header-row.header-links {
