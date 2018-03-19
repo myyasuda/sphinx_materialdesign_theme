@@ -96,7 +96,7 @@ pip install dist/sphinx_materialdesign_theme-${version}.tar.gz
 ### Resister PyPI
 
 ```
-twine upload dist/*
+python setup.py register sdist upload
 ```
 
 ### Build Example's Document

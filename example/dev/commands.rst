@@ -31,4 +31,3 @@ Build Example's Document
 .. code-block:: bat
 
    sphinx-build -b html ./example ./_build -c ./example
-

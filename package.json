@@ -12,7 +12,7 @@
     "build:example": "rimraf _build && sphinx-build -b html example _build",
     "release": "npm-run-all build:parcel release:package release:pypi",
     "release:noupload": "npm-run-all build:parcel release:package",
-    "release:pypi": "twine upload dist/*",
+    "release:pypi": "python setup.py register sdist upload",
     "release:package": "python setup.py sdist"
   },
   "repository": {
