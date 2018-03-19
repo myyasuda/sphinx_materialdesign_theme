@@ -7,19 +7,16 @@ Build Commands
 packaging
 ---------
 
+Create a source distribution (tar.gz).
+
 .. code-block:: bat
 
    python setup.py sdist
 
-install
--------
-
-.. code-block:: bat
-
-   pip install dist/sphinx_materialdesign_theme-${version}.tar.gz
-
-Register PyPI
+Upload PyPI
 -------------
+
+upload pckage to `PyPI <https://pypi.python.org/pypi>`_.
 
 .. code-block:: bat
 
@@ -27,6 +24,8 @@ Register PyPI
 
 Build Example's Document
 ------------------------
+
+Generate HTML Document for Example.
 
 .. code-block:: bat
 
