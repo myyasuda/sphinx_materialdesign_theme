@@ -36,12 +36,12 @@
 
     a.has-children {
         & + ul {
-            height: 0;
-            overflow: hidden;
-            transition: all 300ms 0s ease;
+            max-height: 0;
+            overflow-y: hidden;
+            transition: all 300ms ease 0s;
             &.is-open {
-                height: auto; /* 追加 */
-                max-height: 50em;
+                max-height: 900vh;
+                opacity: 1;
             }
         }
     }
