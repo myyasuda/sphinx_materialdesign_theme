@@ -14,7 +14,6 @@ $(function() {
         $('h1, h2, h3, h4, h5, h6, .toc-backref, .contents, .toctree-wrapper, .contents a, .toctree-wrapper a, .mdl-layout__drawer nav a.current').addClass('mdl-color-text--primary');
     }
 
-    styleMdlDownloadLink();
     styleMdlCodeBlock();
     styleColorTextPrimary();
     styleDrawer();
@@ -45,10 +44,6 @@ function styleDrawer() {
             .children('ul').attr('id', `globalnav-${index}`);
     });
     $('.mdl-layout__drawer nav ul.current').addClass('is-open').parent().prev().addClass('is-open');
-}
-
-function styleMdlDownloadLink() {
-   $('a.download').prepend('<i class="material-icons">file_download</i>');
 }
 
 function styleMdlCodeBlock() {
