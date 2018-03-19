@@ -1,22 +1,9 @@
-/*
-Variables
-*/
-$font_size: 14px;
+@import "material-design-lite/src/shadow/shadow";
+@import "material-design-lite/src/layout/layout";
+@import "material-design-lite/src/data-table/data-table";
+@import "material-design-lite/src/footer/mini_footer";
 
-$background_color: #fafafa;
-$code_background: rgba(0,0,0,.05);
-
-$body_font_family: Roboto, 'Noto Sans Japanese' !default;
-$code_font_family: "Menlo", "DejaVu Sans Mono", "Liberation Mono", "Consolas", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace !default;
-
-$box_shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-
-$xl-breakpoint: 1795px;
-$lg-breakpoint: 1200px;
-$md-breakpoint: 992px;
-$sm-breakpoint: 768px;
-$xs-breakpoint: 576px;
-
+@import "./variables";
 @import "./fonts/material-icons";
 @import "./root";
 @import "./layout/layout";

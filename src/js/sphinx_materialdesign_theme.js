@@ -15,11 +15,9 @@ $(function() {
     }
 
     styleMdlDownloadLink();
-    styleMdlFooter();
     styleMdlCodeBlock();
     styleColorTextPrimary();
     styleDrawer();
-
     quickSearchClickEvent();
 
     const spy = new ScrollSpy({
@@ -63,11 +61,6 @@ function styleMdlCodeBlock() {
             $(this).attr('click-to-copy', 'copied!');
         }
     });
-}
-
-function styleMdlFooter() {
-    $('footer.mdl-mini-footer > div.mdl-mini-footer__left-section ul')
-        .addClass('mdl-mini-footer__link-list');
 }
 
 function copyClipboard(selector) {

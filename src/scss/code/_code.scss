@@ -30,7 +30,7 @@
         word-wrap: break-word;
 
         &:hover {
-            box-shadow: $box_shadow;
+            @extend .mdl-shadow--2dp;
 
             &:before {
                 font-family: $body_font_family;

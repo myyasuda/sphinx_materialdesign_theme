@@ -74,12 +74,11 @@
 }
 
 .admonition {
-    // @extend .mdc-elevation--z1;
+    @extend .mdl-shadow--2dp;
 
     padding: 16px 32px;
     margin-top: 20px;
     margin-bottom: 20px;
-    box-shadow: $box_shadow;
 
     @each $type in (note, seealso, hint, warning, attention, tip, important, error, caution, danger) {
         &.#{$type} {

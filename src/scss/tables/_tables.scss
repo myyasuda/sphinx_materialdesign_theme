@@ -1,10 +1,8 @@
-@import "material-design-lite/src/data-table/_data-table.scss";
-
-
 .page-content {
     table:not(.footnote):not(.indextable):not(.hlist):not(.option-list):not(.field-list) {
         @extend .mdl-data-table;
-        box-shadow: $box_shadow;
+        @extend .mdl-shadow--2dp;
+
         margin: 14px 0px;
         table-layout: fixed;
         max-width: 100%;

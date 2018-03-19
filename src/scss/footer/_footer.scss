@@ -10,6 +10,9 @@ footer.mdl-mini-footer {
         .mdl-logo {
             font-size: 1.1rem;
         }
+        ul {
+            @extend .mdl-mini-footer__link-list;
+        }
     }
     > div.mdl-mini-footer__right-section {
         font-size: 0.8rem;
