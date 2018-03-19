@@ -37,6 +37,9 @@
     a.has-children {
         & + ul {
             display: none;
+            &.current {
+                display: block;
+            }
         }
     }
 
