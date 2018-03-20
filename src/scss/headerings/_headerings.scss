@@ -1,6 +1,35 @@
+@keyframes float-in {
+    0% {
+        transform: translateY(0.5rem);
+        opacity: 0;
+    }
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes float-out {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+	100% {
+		transform: translateY(0.5rem);
+		opacity: 0;
+	}
+}
+
 .page-content {
     .headerlink {
-        color: $background_color;
+        display: inline-block;
+        text-decoration: none;
+        margin-left: 0.8rem;
+        color: inherit;
+        opacity: 0;
+        &:hover {
+            animation: float-in 0.2s $animation-curve-fast-out-slow-in 0s forwards;
+        }
     }
 
     h1, h2, h3, h4, h5, h6 {
