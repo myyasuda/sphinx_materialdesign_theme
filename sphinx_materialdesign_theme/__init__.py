@@ -16,7 +16,6 @@ class TemplateLoader(BuiltinTemplateLoader):
     def init(self, builder, theme=None, dirs=None):
         super(TemplateLoader, self).init(builder, theme, dirs)
         self.environment.filters['globaltoc'] = _globaltoc
-        self.environment.filters['primary_color'] = _globaltoc
 
 def _globaltoc(val):
     soup = BeautifulSoup(val, "lxml")
@@ -53,7 +52,3 @@ def _globaltoc(val):
         a['class'].append('mdl-color-text--primary')
 
     return soup.ul.prettify()
-
-def _primary_color(val):
-    soup = BeautifulSoup(val, "lxml")
-    return soup.prettify()
