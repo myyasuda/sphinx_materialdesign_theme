@@ -9,7 +9,6 @@ def get_path():
 
 def setup(app):
     app.add_html_theme('sphinx_materialdesign_theme', package_dir)
-    # app.connect('builder-inited', builder_inited_handler)
     app.config.template_bridge = 'sphinx_materialdesign_theme.TemplateLoader'
 
 class TemplateLoader(BuiltinTemplateLoader):
