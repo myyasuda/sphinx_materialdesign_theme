@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name = 'sphinx_materialdesign_theme',
-    version = '0.1.7',
+    version = '0.1.8',
     author = 'Masahiko Yasuda',
     author_email= 'myasuda@uchida.co.jp',
     url="https://github.com/myyasuda/sphinx_materialdesign_theme",
@@ -28,6 +28,6 @@ setup(
             'sphinx_materialdesign_theme = sphinx_materialdesign_theme',
         ]
     },
-    install_requires = [ 'beautifulsoup4>=4.6.0' ]
+    install_requires = [ 'beautifulsoup4>=4.6.0', 'lxml>=4.2.0' ]
 )
 
