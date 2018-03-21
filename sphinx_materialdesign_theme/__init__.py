@@ -1,6 +1,4 @@
 from os import path
-from sphinx.jinja2glue import BuiltinTemplateLoader
-from bs4 import BeautifulSoup
 
 package_dir = path.dirname(path.abspath(__file__))
 

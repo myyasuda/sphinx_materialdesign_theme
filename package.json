@@ -1,6 +1,6 @@
 {
   "name": "sphinx_materialdesign_theme",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "[![Build Status](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme.svg?branch=master)](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme)",
   "main": "index.js",
   "directories": {
