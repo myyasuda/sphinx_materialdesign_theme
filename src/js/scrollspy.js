@@ -71,23 +71,31 @@ export default class ScrollSpy {
     }
 
     isView(element) {
-        const winH = this.winHeight;
         const scrollTop = this.scrollElement.scrollTop;
-        const scrollBottom = scrollTop + winH;
+        const calcBotom = scrollTop + this.offsetTop;
         const rect = element.getBoundingClientRect();
         const elementTop = rect.top + scrollTop;
         const elementBottom = elementTop + element.offsetHeight;
 
-        return !(scrollBottom <= elementTop + this.offsetTop || elementBottom <= scrollTop + this.offsetTop);
+        return elementTop <= calcBotom + this.offsetTop && elementBottom > scrollTop + this.offsetTop;
     }
 
     toggleNavClass(elements) {
-        let isAlreadyAdded = false;
+        let maxDepth = 0;
+        let maxDepthElement = $();
+
+        for (let i = 0, max = elements.length; i < max; i++) {
+            const el = elements[i];
+            const tempDepth = this.getTagDepth(el);
+            if (maxDepth < tempDepth) {
+                maxDepth = tempDepth;
+                maxDepthElement = el;
+            }
+        }
+
         for (let i = 0, max = this.nav.length; i < max; i++) {
             const navElement = this.nav[i];
-            const element = elements.find(el => navElement.href.split('#')[1] === el.id);
-            if (element && !isAlreadyAdded) {
-                isAlreadyAdded = true;
+            if (navElement.href.split('#')[1] === maxDepthElement.id) {
                 navElement.classList.add(this.className);
                 navElement.classList.add('mdl-color-text--primary');
             } else {
@@ -95,5 +103,9 @@ export default class ScrollSpy {
                 navElement.classList.remove('mdl-color-text--primary');
             }
         }
+    }
+
+    getTagDepth(element) {
+        return parseInt($(element).find('h1,h2,h3,h4,h5,h6').get(0).tagName.split('H')[1]);
     }
 }
