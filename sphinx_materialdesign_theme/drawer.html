@@ -18,8 +18,10 @@
         <span class="mdl-layout-title toc">{{ _('Table Of Contents') }}</span>
         {% set toctree = toctree(maxdepth=4, collapse=False, includehidden=True, titles_only=True) %}
         {% if toctree %}
+            {% set lines = toctree.split('\n') %}
             <nav class="mdl-navigation">
-            {{ toctree }}
+                <!--{{ toc | replace('ul class="current"', 'ul class="current is-open"') | replace("current", "current mdl-color-text--primary") }} -->
+                {{ toctree | globaltoc }}
             </nav>
         {% else %}
         <!-- Local TOC -->

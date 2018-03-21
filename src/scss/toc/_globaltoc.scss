@@ -11,37 +11,21 @@
 
         li {
             min-height: 48px;
-        }
-        a {
-            @extend .mdl-navigation__link;
-
-            padding: 12px 8px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 1rem;
-
-            &.current {
-                font-weight: bold;
-            }
-
-            &.reference:hover {
-                font-weight: bold;
-            }
-        }
-
-    }
-
-    a.has-children {
-        & + ul {
-            display: none;
-            &.current {
-                display: block;
+            .link-wrapper {
+                display: flex;
+                justify-content: space-between;
+                > a {
+                    @extend .mdl-navigation__link;
+                    padding: 12px 0;
+                    display: block;
+                    width: 100%;
+                    font-size: 1rem;
+                }
             }
         }
     }
 
-    div.nav-toggle {
+    .nav-toggle {
         padding: 0;
         float: right;
         display: flex;
@@ -53,8 +37,11 @@
             margin-left: 0;
             margin-right: 4px;
             cursor: pointer;
+            > i {
+                font-size: 18px;
+            }
         }
-        &.is-open {
+        &.show {
             transform: rotateZ(180deg);
             > a {
                 margin-right: 0;
@@ -64,16 +51,16 @@
     }
 
     nav {
-        > ul > li > a {
+        > ul > li > span.link-wrapper {
             padding-left: 8px;
         }
-        > ul > li > ul > li > a {
+        > ul > li > ul > li > span.link-wrapper {
             padding-left: 16px;
         }
-        > ul > li > ul > li > ul > li > a {
+        > ul > li > ul > li > ul > li > span.link-wrapper {
             padding-left: 24px;
         }
-        > ul > li > ul > li > ul > li > ul> li > a {
+        > ul > li > ul > li > ul > li > ul> li > span.link-wrapper {
             padding-left: 32px;
         }
     }

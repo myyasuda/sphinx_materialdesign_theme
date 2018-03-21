@@ -11,22 +11,16 @@ $(function() {
     $('input[type="submit"]').addClass('mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent');
     
     const styleColorTextPrimary = () => {
-        $('h1, h2, h3, h4, h5, h6, .toc-backref, .contents, .toctree-wrapper, .contents a, .toctree-wrapper a, .mdl-layout__drawer nav a.current').addClass('mdl-color-text--primary');
+        $('h1, h2, h3, h4, h5, h6, .toc-backref, .contents, .toctree-wrapper, .contents a, .toctree-wrapper a').addClass('mdl-color-text--primary');
     }
 
-    function styleDrawer() {
-        $('.mdl-layout__drawer nav li:has(ul)').addClass('has-children').children('a').each(function (index) {
-            const $a = $(this);
-            $a.addClass('has-children')
-                .parent()
-                .before($('<div class="nav-toggle"><a class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">keyboard_arrow_down</i></a></div>').click(function() {
-                    const $toggle = $(this);
-                    $(`ul#globalnav-${index}`).animate({ height: 'toggle', opacity: 'toggle'});
-                    $toggle.toggleClass('is-open');
-                }))
-                .children('ul').attr('id', `globalnav-${index}`);
+    function collapse() {
+        $('.mdl-layout__drawer nav .nav-toggle a').click(function() {
+            const $toggle = $(this);
+            const id = $toggle.attr('data-toggle');
+            $(`ul${id}`).toggleClass('show').animate({height: "toggle", opacity: "toggle"});
+            $toggle.parent().toggleClass('show');
         });
-        $('.mdl-layout__drawer nav ul.current').addClass('is-open').parent().prev().addClass('is-open');
     }
     
     function styleMdlCodeBlock() {
@@ -74,7 +68,7 @@ $(function() {
 
     styleMdlCodeBlock();
     styleColorTextPrimary();
-    styleDrawer();
+    collapse();
     quickSearchClickEvent();
 
     const spy = new ScrollSpy({

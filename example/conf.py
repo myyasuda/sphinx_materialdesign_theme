@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-\
+import sys,os
+sys.path.append(os.pardir)
+import sphinx_materialdesign_theme
 
 source_suffix = '.rst'
 master_doc = 'index'
@@ -73,3 +76,6 @@ html_show_sourcelink = True
 rst_prolog= u"""
     .. |project| replace:: Sphinx Material Design Theme
 """
+
+def setup(app):
+    sphinx_materialdesign_theme.setup(app)
