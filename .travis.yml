@@ -10,7 +10,7 @@ before_install:
     - sudo ln -s /run/shm /dev/shm
 
 install:
-    - conda install --yes python="2.7" sphinx
+    - conda install --yes python="2.7" sphinx beautifulsoup4
 script:
     - sphinx-build -b html ./example ./_build -c ./example
 
