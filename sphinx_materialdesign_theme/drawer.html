@@ -20,8 +20,7 @@
         {% if toctree %}
             {% set lines = toctree.split('\n') %}
             <nav class="mdl-navigation">
-                <!--{{ toc | replace('ul class="current"', 'ul class="current is-open"') | replace("current", "current mdl-color-text--primary") }} -->
-                {{ toctree | globaltoc }}
+                {{ toctree }}
             </nav>
         {% else %}
         <!-- Local TOC -->

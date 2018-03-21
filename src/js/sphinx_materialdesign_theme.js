@@ -10,7 +10,41 @@ $(function() {
     $('table').removeAttr('border');
 
     const styleColorTextPrimary = () => {
-        $('h1, h2, h3, h4, h5, h6, .toc-backref, .contents, .toctree-wrapper, .contents a, .toctree-wrapper a').addClass('mdl-color-text--primary');
+        $('h1, h2, h3, h4, h5, h6, .toc-backref, .contents, .toctree-wrapper, .contents a, .toctree-wrapper a, .globaltoc a.current').addClass('mdl-color-text--primary');
+    }
+
+    function reconstructionDrawerGlobalToc() {
+        const $globaltoc = $('.mdl-layout__drawer nav');
+        const $lists = $globaltoc.find('li');
+        $.each($lists, function(index, li) {
+            const $li = $(li);
+            const $linkWrapper = $('<span class="link-wrapper"></span>');
+            const $link = $li.children('a');
+            $li.append($linkWrapper.append($link));
+
+            const isCurrent = $li.hasClass('current') && !$link.hasClass('current');
+            const $ul = $li.children('ul')
+            if ($ul.length) {
+                const ulId = `globalnav-${index}`;
+                $ul.attr('id', ulId);
+                $ul.addClass('collapse');
+                const $toggleWrapper = $('<span class="nav-toggle"></span>');
+                if (isCurrent) {
+                    $ul.addClass('show');
+                    $toggleWrapper.addClass('show');
+                } else {
+                    $ul.hide();
+                }
+
+                $li.append(
+                    $linkWrapper.append(
+                        $toggleWrapper.append(
+                            $(`<a class="mdl-button mdl-js-button mdl-button--icon" data-toggle="#${ulId}"><i class="material-icons">keyboard_arrow_down</i></span>`)
+                        )
+                    )
+                ).append($ul);
+            }
+        });
     }
 
     function collapse() {
@@ -67,6 +101,7 @@ $(function() {
 
     styleMdlCodeBlock();
     styleColorTextPrimary();
+    reconstructionDrawerGlobalToc();
     collapse();
     quickSearchClickEvent();
 
