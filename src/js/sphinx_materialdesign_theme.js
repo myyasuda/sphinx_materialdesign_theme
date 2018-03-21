@@ -7,9 +7,7 @@ import AdjustHeight from "./adjust-height";
 $(function() {
     $('body').fadeIn(0);
     $('.page-content > blockquote:first-child').remove();
-
-    $('input[type="submit"]').addClass('mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent');
-    
+   
     const styleColorTextPrimary = () => {
         $('h1, h2, h3, h4, h5, h6, .toc-backref, .contents, .toctree-wrapper, .contents a, .toctree-wrapper a').addClass('mdl-color-text--primary');
     }
