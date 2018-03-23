@@ -1,8 +1,9 @@
 from setuptools import setup
+from sphinx_materialdesign_theme import __version__
 
 setup(
     name = 'sphinx_materialdesign_theme',
-    version = '0.1.10',
+    version = __version__,
     author = 'Masahiko Yasuda',
     author_email= 'myasuda@uchida.co.jp',
     url="https://github.com/myyasuda/sphinx_materialdesign_theme",
