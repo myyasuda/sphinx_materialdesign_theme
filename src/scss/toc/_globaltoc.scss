@@ -15,11 +15,12 @@
                 display: flex;
                 justify-content: space-between;
                 > a {
-                    @extend .mdl-navigation__link;
                     padding: 12px 0;
                     display: block;
                     width: 100%;
                     font-size: 1rem;
+                    text-decoration: none;
+                    color: $layout-drawer-navigation-color;
                     &.current {
                         font-weight: bold;
                     }

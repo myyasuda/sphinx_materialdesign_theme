@@ -23,7 +23,7 @@ $(function() {
             $li.append($linkWrapper.append($link));
 
             const isCurrent = $li.hasClass('current') && !$link.hasClass('current');
-            const $ul = $li.children('ul')
+            const $ul = $li.children('ul');
             if ($ul.length) {
                 const ulId = `globalnav-${index}`;
                 $ul.attr('id', ulId);
