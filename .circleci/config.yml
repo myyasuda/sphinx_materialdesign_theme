@@ -17,6 +17,7 @@ jobs:
       - run:
           name: deploy
           command: |
+            remote=$(git config remote.origin.url)
             pushd _build > /dev/null
             git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
             git config --global user.name "$GH_NAME" > /dev/null 2>&1
@@ -24,5 +25,5 @@ jobs:
             git init
             git add .
             git commit -m "Deploy to GitHub Pages."
-            git push --force --quiet "https://github.com/myyasuda/sphinx_materialdesign_theme.git" master:gh-pages
+            git push --force --quiet $remote master:gh-pages
             popd > /dev/null
