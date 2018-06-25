@@ -10,14 +10,10 @@ jobs:
       - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6/site-packages
       - run: 
           name: install dependencies
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
+          command: pip install -r requirements.txt
       - run:
           name: build
-          command: |
-            sphinx-build -b html ./example ./_build
+          command: sphinx-build -b html ./example ./_build
       - run:
           name: deploy
           command: |
