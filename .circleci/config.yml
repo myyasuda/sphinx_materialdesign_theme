@@ -18,10 +18,10 @@ jobs:
           name: deploy
           command: |
             pushd _build > /dev/null
+            git config --global user.name "CircleCI User"
             touch .nojekyll
             git init
             git add .
             git commit -m "Deploy to GitHub Pages."
-            git config user.name "CircleCI User"
             git push --force --quiet "https://github.com/myyasuda/sphinx_materialdesign_theme.git" master:gh-pages > /dev/null 2>&1
             popd > /dev/null
