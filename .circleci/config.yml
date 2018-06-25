@@ -18,7 +18,8 @@ jobs:
           name: deploy
           command: |
             pushd _build > /dev/null
-            git config --global user.name "CircleCI User"
+            git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
+            git config --global user.name "$GH_NAME" > /dev/null 2>&1
             touch .nojekyll
             git init
             git add .
