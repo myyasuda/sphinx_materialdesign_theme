@@ -1,0 +1,38 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.1
+    workign_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "requirements.txt" }}
+          - v1-dependencies-
+      - run: 
+          name: install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements.txt
+      - save_cache:
+          path:
+            - ./venv
+          key: v1-dependencies-{{ checksum "requirements.txt" }}
+      - run:
+          name: build
+          command: |
+            . venv/bin/active
+            sphinx-build -b html ./example ./_build
+      - run:
+          name: deploy
+          command: |
+            pushd _build > /dev/null
+            touch .nojekyll
+            git init
+            git add .
+            git commit -m "Deploy to GitHub Pages."
+            git config user.name "CircleCI User"
+            git push --force --quiet "https://github.com/myyasuda/sphinx_materialdesign_theme.git" master:gh-pages > /dev/null 2>&1
+            popd > /dev/null

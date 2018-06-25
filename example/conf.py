@@ -23,7 +23,7 @@ language = 'en'
 
 templates_path = ['_templates']
 html_sidebars = {
-   '**': ['globaltoc.html', './color-palet.html']
+   '**': ['globaltoc.html']
 }
 html_favicon = '_static/favicon.ico'
 html_logo = '_static/logo.png'
