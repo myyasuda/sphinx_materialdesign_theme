@@ -27,6 +27,6 @@ jobs:
             touch .nojekyll
             git init
             git add .
-            git commit -m "Deploy to GitHub Pages."
+            git commit -m "Deploy to GitHub Pages. [skip ci]"
             git push --force --quiet $remote master:gh-pages
             popd > /dev/null
