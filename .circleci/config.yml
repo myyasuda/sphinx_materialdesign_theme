@@ -3,7 +3,6 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.6.1
-    workign_directory: ~/sphinx_materialdesign_theme
     steps:
       - checkout
       - restore_cache:
