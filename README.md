@@ -1,7 +1,7 @@
 # Material Design HTML Theme for Sphinx
 
 [![PyPI version](https://badge.fury.io/py/sphinx_materialdesign_theme.svg)](https://badge.fury.io/py/sphinx_materialdesign_theme)
-[![Build Status](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme.svg?branch=master)](https://travis-ci.org/myyasuda/sphinx_materialdesign_theme)
+[![CircleCI](https://circleci.com/gh/myyasuda/sphinx_materialdesign_theme.svg?style=svg)](https://circleci.com/gh/myyasuda/sphinx_materialdesign_theme)
 
 [Demo Document](http://myyasuda.github.io/sphinx_materialdesign_theme)
 
