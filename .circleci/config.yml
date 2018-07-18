@@ -4,7 +4,7 @@ jobs:
     working_directory: ~/sphinx_materialdesign_theme
     docker:
       - image: circleci/python:3.6.4
-    brnches:
+    branches:
       - only:
         - master
     steps:

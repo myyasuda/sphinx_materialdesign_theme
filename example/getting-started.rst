@@ -161,7 +161,9 @@ Let's try to select color.
         <button class="primary-color-pick-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="red">red</button>
         <button class="primary-color-pick-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="pink">pink</button>
         <button class="primary-color-pick-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="purple">purple</button>
+        <!--
         <button class="primary-color-pick-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="deep_purple">deep purple</button>
+        -->
    </div>
 
 **Accent Colors**
@@ -184,7 +186,9 @@ Let's try to select color.
         <button class="accent-color-pick-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="red">red</button>
         <button class="accent-color-pick-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="pink">pink</button>
         <button class="accent-color-pick-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="purple">purple</button>
+        <!--
         <button class="accent-color-pick-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" name="deep_purple">deep purple</button>
+        -->
     </div>
    <script>
    $(function(){
