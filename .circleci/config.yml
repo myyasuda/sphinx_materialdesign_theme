@@ -29,9 +29,9 @@ jobs:
             popd > /dev/null
 workflows:
   version: 2
-    build_flow:
-      jobs:
-        - build:
-            filters:
-              branches:
-                only: master
+  build_flow:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
