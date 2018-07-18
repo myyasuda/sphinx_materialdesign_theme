@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>Lists and Quote-like blocks &#8212; Material Design Theme 0.1.11 documentation</title>
+
+    <link rel="stylesheet" href="../../_static/material-icons.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/notosanscjkjp.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/roboto.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/material-design-lite-1.3.0/material.indigo-pink.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx_materialdesign_theme.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/sphinx_materialdesign_theme.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Tables" href="tables.html" />
+    <link rel="prev" title="Typpography" href="typpography.html" /> 
+  </head>
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer"><header class="mdl-layout__header mdl-layout__header--waterfall ">
+    <div class="mdl-layout__header-row">
+        
+        <nav class="mdl-navigation breadcrumb">
+            <a class="mdl-navigation__link" href="../index.html">Examples</a><i class="material-icons">navigate_next</i>
+            <a class="mdl-navigation__link" href="index.html">reStructuredText</a><i class="material-icons">navigate_next</i>
+            <a class="mdl-navigation__link is-active">Lists and Quote-like blocks</a>
+        </nav>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+        
+<form class="form-inline pull-sm-right" action="../../search.html" method="get">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+        <label id="quick-search-icon" class="mdl-button mdl-js-button mdl-button--icon"  for="waterfall-exp">
+            <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="q"  id="waterfall-exp" placeholder="Search" />
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </div>
+      </div>
+      <div class="mdl-tooltip" data-mdl-for="quick-search-icon">
+      Quick search
+      </div>
+</form>
+        
+<a id="button-show-source"
+    class="mdl-button mdl-js-button mdl-button--icon"
+    href="../../_sources/examples/reStructuredText/lists.rst.txt" rel="nofollow">
+<i class="material-icons">code</i>
+</a>
+<div class="mdl-tooltip" data-mdl-for="button-show-source">
+Show Source
+</div>
+        </nav>
+    </div>
+    <div class="mdl-layout__header-row header-links">
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+          <a  class="mdl-navigation__link" href="../../index.html">
+                  <i class="material-icons navigation-link-icon">home</i>
+                  Home
+              </a>
+          
+              <a  class="mdl-navigation__link" href="http://example.com">
+                  <i class="material-icons navigation-link-icon">launch</i>
+                  ExternalLink
+              </a>
+          
+              <a  class="mdl-navigation__link" href="http://example.com">
+                  
+                  NoIconLink
+              </a>
+          
+              <a  class="mdl-navigation__link" href="https://github.com/myyasuda/sphinx_materialdesign_theme">
+                  <i class="material-icons navigation-link-icon">link</i>
+                  GitHub
+              </a>
+      </nav>
+    </div>
+</header><header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="../../index.html">
+              <img class="logo" src="../../_static/logo.png" alt="Material Design Theme"/>
+          </a>
+      </span>
+    
+<div class="globaltoc">
+  <span class="mdl-layout-title toc">Table Of Contents</span>
+  
+  
+      
+      <nav class="mdl-navigation">
+          <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">reStructuredText</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="inlinemarkup.html">Inline Markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="typpography.html">Typpography</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Lists and Quote-like blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tables.html">Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="footnotes.html">Footnotes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hyperlinks.html">Hyperlink Targets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="directives/index.html">Directives</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="directives/admonitions.html">Admonitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="directives/images.html">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="directives/additional.html">Additional body elements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="directives/specialtables.html">Special tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="directives/specialdirectives.html">Special directives</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sphinxmarkup/index.html">Sphinx Markup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/paragraph-level-markup.html">Paragraph-level markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/glossary.html">Glossary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/grammar-production-displays.html">Grammar production displays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/codeblock.html">Code Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/inlinemarkup.html">Inline markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/indexes.html">Indexes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">Developer’s Tips</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../dev/commands.html">Build Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../japanese/index.html">日本語フォント表示テスト用</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../japanese/setup.html">セットアップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../japanese/examples.html">表示例</a></li>
+</ul>
+</li>
+</ul>
+
+      </nav>
+  
+  </div>
+
+</header>
+        <main class="mdl-layout__content" tabIndex="0">
+<header class="mdl-layout__drawer">
+    
+          <!-- Title -->
+      <span class="mdl-layout-title">
+          <a class="title" href="../../index.html">
+              <img class="logo" src="../../_static/logo.png" alt="Material Design Theme"/>
+          </a>
+      </span>
+    
+<div class="globaltoc">
+  <span class="mdl-layout-title toc">Table Of Contents</span>
+  
+  
+      
+      <nav class="mdl-navigation">
+          <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">reStructuredText</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="inlinemarkup.html">Inline Markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="typpography.html">Typpography</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Lists and Quote-like blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tables.html">Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="footnotes.html">Footnotes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hyperlinks.html">Hyperlink Targets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="directives/index.html">Directives</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="directives/admonitions.html">Admonitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="directives/images.html">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="directives/additional.html">Additional body elements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="directives/specialtables.html">Special tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="directives/specialdirectives.html">Special directives</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../sphinxmarkup/index.html">Sphinx Markup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/paragraph-level-markup.html">Paragraph-level markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/glossary.html">Glossary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/grammar-production-displays.html">Grammar production displays</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/codeblock.html">Code Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/inlinemarkup.html">Inline markup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../sphinxmarkup/indexes.html">Indexes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">Developer’s Tips</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../dev/commands.html">Build Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../japanese/index.html">日本語フォント表示テスト用</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../japanese/setup.html">セットアップ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../japanese/examples.html">表示例</a></li>
+</ul>
+</li>
+</ul>
+
+      </nav>
+  
+  </div>
+
+</header>
+
+    <div class="document">
+        <div class="page-content">
+        
+  <blockquote>
+<div></div></blockquote>
+<div class="section" id="lists-and-quote-like-blocks">
+<h1>Lists and Quote-like blocks<a class="headerlink" href="#lists-and-quote-like-blocks" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bullet-lists">
+<h2>Bullet Lists<a class="headerlink" href="#bullet-lists" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">-</span> This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.
+
+<span class="m">-</span> This is the first paragraph in the second item in the list.
+
+This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.
+
+<span class="m">-</span> This is a sublist.  The bullet lines up with the left edge of
+    the text blocks above.  A sublist is a new list so requires a
+    blank line above and below.
+
+<span class="m">-</span> This is the third item of the main list.
+
+This paragraph is not part of the list.
+</pre></div>
+</div>
+<ul>
+<li><p class="first">This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.</p>
+</li>
+<li><p class="first">This is the first paragraph in the second item in the list.</p>
+<p>This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.</p>
+<ul class="simple">
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+</ul>
+</li>
+<li><p class="first">This is the third item of the main list.</p>
+</li>
+</ul>
+<p>This paragraph is not part of the list.</p>
+</div>
+<div class="section" id="enumerated-lists">
+<h2>Enumerated Lists<a class="headerlink" href="#enumerated-lists" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">1.</span> Item 1 initial text.
+
+   a) Item 1a.
+   b) Item 1b.
+
+<span class="m">2.</span> a) Item 2a.
+   b) Item 2b.
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li>Item 1 initial text.<ol class="loweralpha">
+<li>Item 1a.</li>
+<li>Item 1b.</li>
+</ol>
+</li>
+<li><ol class="first loweralpha">
+<li>Item 2a.</li>
+<li>Item 2b.</li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="definition-lists">
+<h2>Definition Lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>term 1
+    Definition 1.
+
+term 2
+    Definition 2, paragraph 1.
+
+    Definition 2, paragraph 2.
+
+term 3 : classifier
+    Definition 3.
+
+term 4 : classifier one : classifier two
+    Definition 4.
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>term 1</dt>
+<dd>Definition 1.</dd>
+<dt>term 2</dt>
+<dd><p class="first">Definition 2, paragraph 1.</p>
+<p class="last">Definition 2, paragraph 2.</p>
+</dd>
+<dt>term 3 <span class="classifier-delimiter">:</span> <span class="classifier">classifier</span></dt>
+<dd>Definition 3.</dd>
+<dt>term 4 <span class="classifier-delimiter">:</span> <span class="classifier">classifier one</span> <span class="classifier-delimiter">:</span> <span class="classifier">classifier two</span></dt>
+<dd>Definition 4.</dd>
+</dl>
+</div>
+<div class="section" id="field-lists">
+<h2>Field Lists<a class="headerlink" href="#field-lists" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:Date:</span> <span class="nf">2001-08-16</span>
+<span class="nc">:Version:</span> <span class="nf">1</span>
+<span class="nc">:Authors:</span> <span class="nf">- Me</span>
+          <span class="m">-</span> Myself
+          <span class="m">-</span> I
+<span class="nc">:Indentation:</span> <span class="nf">Since the field marker may be quite long, the second</span>
+and subsequent lines of the field body do not have to line up
+with the first line, but they must be indented relative to the
+field name marker, and they must line up with each other.
+<span class="nc">:Parameter i:</span> <span class="nf">integer</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body"><p class="first">2001-08-16</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Version:</th><td class="field-body"><p class="first">1</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body"><ul class="first simple">
+<li>Me</li>
+<li>Myself</li>
+<li>I</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Indentation:</th><td class="field-body"><p class="first">Since the field marker may be quite long, the second
+and subsequent lines of the field body do not have to line up
+with the first line, but they must be indented relative to the
+field name marker, and they must line up with each other.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameter i:</th><td class="field-body"><p class="first last">integer</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="option-lists">
+<h2>Option Lists<a class="headerlink" href="#option-lists" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>-a         Output all.
+-b         Output both (this description is quite long).
+-c arg     Output just arg.
+--long     Output all day long.
+
+-p         This option has two paragraphs in the description.
+        This is the first.
+
+        This is the second.  Blank lines may be omitted between
+        options (as above) or left in (as here and below).
+
+--very-long-option  A VMS-style option.  Note the adjustment for
+                    the required two spaces.
+
+--an-even-longer-option
+        The description can also start on the next line.
+
+-2, --two  This option has two variants.
+
+-f FILE, --file=FILE  These two options are synonyms; both have
+                    arguments.
+
+/V         A VMS/DOS-style option.
+</pre></div>
+</div>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-a</span></kbd></td>
+<td>Output all.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-b</span></kbd></td>
+<td>Output both (this description is
+quite long).</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-c <var>arg</var></span></kbd></td>
+<td>Output just arg.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">--long</span></kbd></td>
+<td>Output all day long.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-p</span></kbd></td>
+<td><p class="first">This option has two paragraphs in the description.
+This is the first.</p>
+<p class="last">This is the second.  Blank lines may be omitted between
+options (as above) or left in (as here and below).</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--very-long-option</span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>A VMS-style option.  Note the adjustment for
+the required two spaces.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--an-even-longer-option</span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>The description can also start on the next line.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-2</span>, <span class="option">--two</span></kbd></td>
+<td>This option has two variants.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-f <var>FILE</var></span>, <span class="option">--file=<var>FILE</var></span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>These two options are synonyms; both have
+arguments.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">/V</span></kbd></td>
+<td>A VMS/DOS-style option.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="quoted-literal-blocks">
+<h2>Quoted Literal Blocks<a class="headerlink" href="#quoted-literal-blocks" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>&gt;&gt; Great idea!
+&gt;
+&gt; Why didn&#39;t I think of that?
+
+You just did!  ;-)
+</pre></div>
+</div>
+<p>&gt;&gt; Great idea!
+&gt;
+&gt; Why didn’t I think of that?</p>
+<p>You just did!  ;-)</p>
+</div>
+<div class="section" id="line-blocks">
+<h2>Line Blocks<a class="headerlink" href="#line-blocks" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="o">|</span> Lend us a couple of bob till Thursday.
+<span class="o">|</span> I&#39;m absolutely skint.
+<span class="o">|</span> But I&#39;m expecting a postal order and I can pay you back
+as soon as it comes.
+<span class="o">|</span> Love, Ewan.
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">Lend us a couple of bob till Thursday.</div>
+<div class="line">I’m absolutely skint.</div>
+<div class="line">But I’m expecting a postal order and I can pay you back
+as soon as it comes.</div>
+<div class="line">Love, Ewan.</div>
+</div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Take it away, Eric the Orchestra Leader!
+
+    <span class="o">|</span> A one, two, a one two three four
+    |
+    <span class="o">|</span> Half a bee, philosophically,
+    <span class="o">|</span>     must, <span class="ge">*ipso facto*</span>, half not be.
+    <span class="o">|</span> But half the bee has got to be,
+    <span class="o">|</span>     <span class="ge">*vis a vis*</span> its entity.  D&#39;you see?
+    |
+    <span class="o">|</span> But can a bee be said to be
+    <span class="o">|</span>     or not to be an entire bee,
+    <span class="o">|</span>         when half the bee is not a bee,
+    <span class="o">|</span>             due to some ancient injury?
+    |
+    <span class="o">|</span> Singing...
+</pre></div>
+</div>
+<p>Take it away, Eric the Orchestra Leader!</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">A one, two, a one two three four</div>
+<div class="line"><br /></div>
+<div class="line">Half a bee, philosophically,</div>
+<div class="line-block">
+<div class="line">must, <em>ipso facto</em>, half not be.</div>
+</div>
+<div class="line">But half the bee has got to be,</div>
+<div class="line-block">
+<div class="line"><em>vis a vis</em> its entity.  D’you see?</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">But can a bee be said to be</div>
+<div class="line-block">
+<div class="line">or not to be an entire bee,</div>
+<div class="line-block">
+<div class="line">when half the bee is not a bee,</div>
+<div class="line-block">
+<div class="line">due to some ancient injury?</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="line">Singing…</div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="doctest-blocks">
+<h2>Doctest Blocks<a class="headerlink" href="#doctest-blocks" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>This is an ordinary paragraph.
+
+&gt;&gt;&gt; print &#39;this is a Doctest block&#39;
+this is a Doctest block
+
+The following is a literal block<span class="se">::</span>
+
+<span class="s">    &gt;&gt;&gt; This is not recognized as a doctest block by</span>
+<span class="s">    reStructuredText.  It *will* be recognized by the doctest</span>
+<span class="s">    module, though!</span>
+</pre></div>
+</div>
+<p>This is an ordinary paragraph.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">&#39;this is a Doctest block&#39;</span>
+<span class="go">this is a Doctest block</span>
+</pre></div>
+</div>
+<p>The following is a literal block:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">This</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">recognized</span> <span class="k">as</span> <span class="n">a</span> <span class="n">doctest</span> <span class="n">block</span> <span class="n">by</span>
+<span class="go">reStructuredText.  It *will* be recognized by the doctest</span>
+<span class="go">module, though!</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+        </div>
+        <div class="side-doc-outline">
+            <div class="side-doc-outline--content"> 
+<div class="localtoc">
+    <p class="caption">
+      <span class="caption-text">Table Of Contents</span>
+    </p>
+    <ul>
+<li><a class="reference internal" href="#">Lists and Quote-like blocks</a><ul>
+<li><a class="reference internal" href="#bullet-lists">Bullet Lists</a></li>
+<li><a class="reference internal" href="#enumerated-lists">Enumerated Lists</a></li>
+<li><a class="reference internal" href="#definition-lists">Definition Lists</a></li>
+<li><a class="reference internal" href="#field-lists">Field Lists</a></li>
+<li><a class="reference internal" href="#option-lists">Option Lists</a></li>
+<li><a class="reference internal" href="#quoted-literal-blocks">Quoted Literal Blocks</a></li>
+<li><a class="reference internal" href="#line-blocks">Line Blocks</a></li>
+<li><a class="reference internal" href="#doctest-blocks">Doctest Blocks</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+            </div>
+        </div>
+
+      <div class="clearer"></div>
+    </div><div class="pagenation">
+     <a id="button-prev" href="typpography.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="P">
+         <i class="pagenation-arrow-L material-icons">arrow_back</i>
+         <div class="pagenation-text">
+            <span class="pagenation-direction">Previous</span>
+            <div>Typpography</div>
+         </div>
+     </a>
+     <a id="button-next" href="tables.html" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" role="botton" accesskey="N">
+        <i class="pagenation-arrow-R material-icons">arrow_forward</i>
+        <div class="pagenation-text">
+            <span class="pagenation-direction">Next</span>
+            <div>Tables</div>
+        </div>
+     </a>
+  </div>
+        <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <div class="mdl-logo">Material Design Theme</div>
+      <div>
+        
+        <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev/index.html">Developer’s Tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../japanese/index.html">日本語フォント表示テスト用</a></li>
+</ul>
+
+      </div>
+    </div>
+
+    <div class="mdl-mini-footer__right-section">
+        <div>&copy; Copyright 2016, Masahiko Yasuda.</div>
+      <div>Generated by <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.7.5 using <a href="https://github.com/myyasuda/sphinx_materialdesign_theme">sphinx_materialdesign_theme</a>.</div>
+    </div>
+</footer>
+        </main>
+    </div>
+  </body>
+</html>
