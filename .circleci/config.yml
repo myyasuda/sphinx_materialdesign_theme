@@ -4,9 +4,6 @@ jobs:
     working_directory: ~/sphinx_materialdesign_theme
     docker:
       - image: circleci/python:3.6.4
-    branches:
-      - only:
-        - master
     steps:
       - checkout
       - run: sudo chown -R circleci:circleci /usr/local/bin
@@ -30,3 +27,10 @@ jobs:
             git commit -m "Deploy to GitHub Pages. [skip ci]"
             git push --force --quiet $remote master:gh-pages
             popd > /dev/null
+workflows:
+  version: 2
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
